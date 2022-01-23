@@ -2,13 +2,13 @@
 
 ## 수원시 광역(시외) 버스 스마트 안전 서비스 구축
 
+failed_speed.py : 과속 버스 판별에 실패한 코드 모음
+
 node_link_buff.py : 도로 링크의 string 좌표 형식을 polygon으로 변환
 
 over_speed_100.py : 시속 100이 넘는 버스만을 판별
 
 over_speed_poly.py : 초당 데이터를 기준으로 당시의 도로 최대 속도를 기준으로 과속 버스를 판별
-
-failed_speed.py : 과속 버스 판별에 실패한 코드 모음
 
 21년 10월 ~ ‘22년 1월(4개월)
 
