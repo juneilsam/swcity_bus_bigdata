@@ -35,7 +35,7 @@ for j in spd_collect:
     # 같은 제한 속도를 가진 도로 링크로 테이블 분할
     node_df  = node_sql.filter(node_sql.MAX_SPD == max_spd)
     
-    # 쿼리문으로 불러온 데이터를 pandas 데이터 프레임 형식으로 불러옴
+    # 쿼리문으로 불러온 데이터를 pandas 데이터 프레임 형식으로 변환함
     node_df = gpd.GeoDataFrame(node_df.toPandas(), geometry='geom')
     
     # buffer 기능을 이용, string 좌표를 polygon으로 변환
