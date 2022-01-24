@@ -39,7 +39,7 @@ for j in spd_collect:
     node_df = gpd.GeoDataFrame(node_df.toPandas(), geometry='geom')
     
     # buffer 기능을 이용, string 좌표를 polygon으로 변환
-    node_df['geom'] = node_df['geom'].buffer(0.00027, cap_style=2)
+    node_df['geom'] = node_df['geom'].buffer((node_df.LANES * 0.00027), cap_style=2)
     node_df = spark.createDataFrame(node_df)
     
     # polygon으로 변환한 데이터 추가
